@@ -1,24 +1,27 @@
 <html>
 <head>
     <link rel="stylesheet" href="main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="container">
-    <button id="b1" class="button" onclick="klick(this.id)"></button>
-    <button id="b2" class="button" onclick="klick(this.id)"></button>
-    <button id="b3" class="button" onclick="klick(this.id)"></button>
+    <button id="b1" class="button btn btn-default" onclick="klick(this.id)"></button>
+    <button id="b2" class="button btn btn-default" onclick="klick(this.id)"></button>
+    <button id="b3" class="button btn btn-default" onclick="klick(this.id)"></button>
     <br>
-    <button id="b4" class="button" onclick="klick(this.id)"></button>
-    <button id="b5" class="button" onclick="klick(this.id)"></button>
-    <button id="b6" class="button" onclick="klick(this.id)"></button>
+    <button id="b4" class="button btn btn-default" onclick="klick(this.id)"></button>
+    <button id="b5" class="button btn btn-default" onclick="klick(this.id)"></button>
+    <button id="b6" class="button btn btn-default" onclick="klick(this.id)"></button>
     <br>
-    <button id="b7" class="button" onclick="klick(this.id)"></button>
-    <button id="b8" class="button" onclick="klick(this.id)"></button>
-    <button id="b9" class="button" onclick="klick(this.id)"></button>
+    <button id="b7" class="button btn btn-default" onclick="klick(this.id)"></button>
+    <button id="b8" class="button btn btn-default" onclick="klick(this.id)"></button>
+    <button id="b9" class="button btn btn-default" onclick="klick(this.id)"></button>
     <br>
     <br>
-    <button id="reset" class="button" onclick="reset()">Reset</button>
-    <h4 id="result"></h4>
+    <button id="reset" class="btnReset btn btn-primary btn-lg" onclick="reset()"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button>
+    <br>
+    <br>
+    <div id="result" class="alert alert-success" role="alert"></div>
 </div>
 </body>
 </html>

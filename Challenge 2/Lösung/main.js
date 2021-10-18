@@ -1,5 +1,4 @@
 var currentPlayer = 'O';
-hideAlert()
 
 function klick(id) {
     if (currentPlayer === 'X') {
@@ -19,35 +18,27 @@ function checkFinish() {
     if (getElementById("b1").innerHTML === currentPlayer && getElementById("b2").innerHTML === currentPlayer && getElementById("b3").innerHTML === currentPlayer) {
         setResultText(currentPlayer)
         disableAll()
-        showAlert()
     } else if (getElementById("b4").innerHTML === currentPlayer && getElementById("b5").innerHTML === currentPlayer && getElementById("b6").innerHTML === currentPlayer) {
         setResultText(currentPlayer)
         disableAll()
-        showAlert()
     } else if (getElementById("b7").innerHTML === currentPlayer && getElementById("b8").innerHTML === currentPlayer && getElementById("b9").innerHTML === currentPlayer) {
         setResultText(currentPlayer)
         disableAll()
-        showAlert()
     } else if (getElementById("b1").innerHTML === currentPlayer && getElementById("b4").innerHTML === currentPlayer && getElementById("b7").innerHTML === currentPlayer) {
         setResultText(currentPlayer)
         disableAll()
-        showAlert()
     } else if (getElementById("b2").innerHTML === currentPlayer && getElementById("b5").innerHTML === currentPlayer && getElementById("b8").innerHTML === currentPlayer) {
         setResultText(currentPlayer)
         disableAll()
-        showAlert()
     } else if (getElementById("b3").innerHTML === currentPlayer && getElementById("b6").innerHTML === currentPlayer && getElementById("b9").innerHTML === currentPlayer) {
         setResultText(currentPlayer)
         disableAll()
-        showAlert()
     } else if (getElementById("b1").innerHTML === currentPlayer && getElementById("b5").innerHTML === currentPlayer && getElementById("b9").innerHTML === currentPlayer) {
         setResultText(currentPlayer)
         disableAll()
-        showAlert()
     } else if (getElementById("b3").innerHTML === currentPlayer && getElementById("b5").innerHTML === currentPlayer && getElementById("b7").innerHTML === currentPlayer) {
         setResultText(currentPlayer)
         disableAll()
-        showAlert()
     }
 }
 
@@ -92,17 +83,8 @@ function reset() {
     getElementById("b8").innerHTML = null
     getElementById("b9").innerHTML = null
     currentPlayer = 'O'
-    hideAlert()
 }
 
 function setResultText(winner) {
     getElementById("result").innerHTML = 'Das Spiel ist vorbei! ' + winner + ' hat gewonnen!'
-}
-
-function showAlert() {
-    document.getElementById("result").style.visibility = 'visible'
-}
-
-function hideAlert() {
-    document.getElementById("result").style.visibility = 'hidden'
 }
