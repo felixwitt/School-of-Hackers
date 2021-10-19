@@ -1,4 +1,4 @@
-var currentPlayer = 'O';
+let currentPlayer = 'O';
 
 function klick(id) {
     if (currentPlayer === 'X') {
@@ -70,9 +70,7 @@ function enableAll() {
     getElementById("b9").disabled = false
 }
 
-function reset() {
-    enableAll()
-    getElementById("result").innerHTML = null
+function removeText() {
     getElementById("b1").innerHTML = null
     getElementById("b2").innerHTML = null
     getElementById("b3").innerHTML = null
@@ -82,6 +80,12 @@ function reset() {
     getElementById("b7").innerHTML = null
     getElementById("b8").innerHTML = null
     getElementById("b9").innerHTML = null
+}
+
+function reset() {
+    enableAll()
+    removeText()
+    getElementById("result").innerHTML = null
     currentPlayer = 'O'
 }
 
